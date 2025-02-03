@@ -67,7 +67,7 @@ class Person
      */
     public function hasFund(): bool
     {
-        return $this->wallet->getBalance() !== 0;
+        return $this->wallet->getBalance() > 0;
     }
     /**
      * Transfers funds from the person's wallet to another person's wallet.
